@@ -2,3 +2,16 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --indent: 10px;
+  --big-indent: 20px;
+  
+  --bg-color: #000028;  
+  --accent-color: #FF0070;
+
+  --header-title: #DB00FF;
+  --text-color: #F1B2CE;  
+
+  --button-outline-hover: rgba(255, 0, 112, 0.40);
+}
