@@ -10,56 +10,51 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 
-  --bg-color: #FFF1F7;  
-  --accent-color: #FF8DCB;
-
   --header-title: #FFC2E6;
-  --text-color: #353430;  
-
+  --text-color: #353430;
+  --bg-color: #FFF1F7;
+  --accent-color: #FF8DCB;
+  --accent-color-secondary: #353430;
   --button-outline-hover: rgba(50, 49, 45, 0.40);
-}
 
-.page {
   background-image: url(../images/cover-image-light.png);
 }
 
-.decorated-zone::before {
-  border-block-end: 1px solid var(--text-color);
-  border-inline-start: 1px solid var(--text-color);
+.theme_light .header__decor {
+  display: none;
 }
 
-.decorated-zone::after {
-  border-block-start: 1px solid var(--text-color);
-  border-inline-end: 1px solid var(--text-color);
+.theme_light .title-decor {
+  color: currentColor;
 }
 
-.header__theme-menu-item {
-  color: var(--text-color);
+.theme_light .section__title {
+  color: currentColor;
 }
-
-.header__theme-menu-button_active {
-  outline: 1px solid var(--text-color);
-}
-
-.title-decor {
-  color: var(--text-color);
-  
-  background-color: var(--accent-color);
-}
-
-.section__title {
-  color: var(--text-color);
-}
-
 
 @media (prefers-color-scheme: light) {
   :root {
-  --bg-color: #FFF1F7;  
-  --accent-color: #FF8DCB;
+    --header-title: #FFC2E6;
+    --text-color: #353430;
+    --bg-color: #FFF1F7;
+    --accent-color: #FF8DCB;
+    --accent-color-secondary: #353430;
+    --button-outline-hover: rgba(50, 49, 45, 0.40);    
+  }
 
-  --header-title: #FFC2E6;
-  --text-color: #353430;  
+  .page {
+    background-image: url(../images/cover-image-light.png);
+  }
 
-  --button-outline-hover: rgba(50, 49, 45, 0.40);
+  .theme_light .header__decor {
+    display: none;
+  }
+  
+  .theme_light .title-decor {
+    color: currentColor;
+  }
+  
+  .theme_light .section__title {
+    color: currentColor;
   }
 }

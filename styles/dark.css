@@ -10,45 +10,13 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 
-  --bg-color: #000028;  
-  --accent-color: #FF0070;
-
   --header-title: #DB00FF;
-  --text-color: #F1B2CE;  
-
+  --text-color: #F1B2CE;
+  --bg-color: #000028;  
+  --accent-color: #FF0070; 
+  --accent-color-secondary: #FF0070;
   --button-outline-hover: rgba(255, 0, 112, 0.40);
+
+  background-image: url(../images/cover-image-dark.png);
 }
 
-.header__decor {
-  position: absolute;
-  inset-inline-end: 29px;
-  inset-block-start: 11px;
-
-  color: var(--accent-color);
-  font: inherit;
-  line-height: 138.889%;
-}
-
-.header__decor::after {
-  position: absolute;
-  inset-inline-end: -20px;
-  inset-block-start: 9px;
-  
-  display: block;
-  content: "";
-
-  inline-size: 7px;
-  block-size: 7px;
-  border-radius: 50%;
-
-  background-color: var(--accent-color);
-
-  box-shadow: 0 0 3px 3px var(--accent-color);
-}
-
-
-@media (width >= 768px) {
-  .header__decor {
-    inset-block-start: 21px;
-  }
-}
