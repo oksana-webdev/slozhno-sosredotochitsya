@@ -282,7 +282,7 @@
   .section__image:nth-of-type(2),
   .section__image:nth-of-type(3) {
     grid-row-end: span 2;
-  } 
+  }
 }
 
 @media (width >= 1024px) {
