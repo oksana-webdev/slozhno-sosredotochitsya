@@ -39,11 +39,11 @@
     --bg-color: #FFF1F7;
     --accent-color: #FF8DCB;
     --accent-color-secondary: #353430;
-    --button-outline-hover: rgba(50, 49, 45, 0.40);    
+    --button-outline-hover: rgba(50, 49, 45, 0.40);
   }
 
   .page {
-    background-image: url(../images/cover-image-light.png);
+    background-image: url(../images/cover-image.png);
   }
 
   .theme_light .header__decor {

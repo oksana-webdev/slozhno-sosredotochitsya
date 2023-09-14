@@ -3,7 +3,7 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 
-  padding: 0 var(--indent, 10px);
+  /* padding: 0 var(--indent, 10px); */
 
   font-family: IBM Plex Mono, Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -27,7 +27,7 @@
   grid-template-columns: 1fr;
   justify-content: space-between;
   min-block-size: 100vb;
-  padding: var(--indent, 10px) 0;
+  padding: var(--indent, 10px);
 }
 
 .decorated-zone::before,
@@ -41,7 +41,7 @@
 
 .decorated-zone::before {
   inset-block-end: var(--indent, 10px);
-  inset-inline-start: 0;
+  inset-inline-start: var(--indent, 10px);
   
   border-block-end: 1px solid var(--accent-color-secondary);
   border-inline-start: 1px solid var(--accent-color-secondary);
@@ -49,7 +49,7 @@
 
 .decorated-zone::after {
   inset-block-start: var(--indent, 10px);
-  inset-inline-end: 0;
+  inset-inline-end: var(--indent, 10px);
   
   border-block-start: 1px solid var(--accent-color-secondary);
   border-inline-end: 1px solid var(--accent-color-secondary);
@@ -57,7 +57,7 @@
 
 .header__decor {
   position: absolute;
-  inset-inline-end: 29px;
+  inset-inline-end: 39px;
   inset-block-start: 11px;
 
   color: var(--accent-color);
@@ -155,12 +155,12 @@
   display: flex;
   flex-direction: column;
   gap: var(--indent-m, 50px);
-  padding: var(--indent-s, 40px)  0;
+  padding: var(--indent-s, 40px)  var(--indent, 10px);
 }
 
 .section {
   display: grid;
-  gap: 20px;  
+  gap: 20px;
 }
 
 .section__title {
@@ -233,14 +233,15 @@
   text-shadow: 2px 2px 0px var(--accent-color-logo);
 }
 
-@media (width >= 768px) {   
+@media (width >= 768px) {
   .header__decor {
+    inset-inline-end: 49px;
     inset-block-start: 21px;
   }
 
   .header__title {
     position: relative;
-    inset-inline-start: -20px;   
+    inset-inline-start: -20px;
   }
 
   .header__description {
@@ -258,7 +259,7 @@
     gap: 20px;
   }
 
-  .section__pictures {    
+  .section__pictures {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto min(192px, 26vi) min(230px, 31vi) min(318px, 42vi);
   }
