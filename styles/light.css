@@ -46,15 +46,15 @@
     background-image: url(../images/cover-image-light.png);
   }
 
-  .theme_light .header__decor {
+  .header__decor {
     display: none;
   }
   
-  .theme_light .title-decor {
+  .title-decor {
     color: currentColor;
   }
   
-  .theme_light .section__title {
+  .section__title {
     color: currentColor;
   }
 }

@@ -10,6 +10,9 @@
 
   --accent-color-logo: #FF0070;
   --logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --main-font-family: IBM Plex Mono, monospace;
+  --main-font-size: 18px;
+  --main-line-height: 130%;
   
 
   --header-title: #DB00FF;
