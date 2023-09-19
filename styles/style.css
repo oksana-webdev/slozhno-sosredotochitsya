@@ -98,7 +98,7 @@
 
 .header__theme-menu-item {
   color: var(--accent-color-secondary);
-  font: inherit; 
+  font: inherit;
 }
 
 .header__theme-menu-button {
@@ -146,8 +146,8 @@
 .title-decor {
   color: var(--bg-color);
   font: inherit;
-  font-weight: 700;  
-
+  font-weight: 700;
+  
   background-color: var(--accent-color);
 }
 
@@ -159,14 +159,14 @@
 }
 
 .section,
-.section__content  {
+.section__content {
   display: grid;
   gap: 20px;
 }
 
 .section__title {
   font: inherit;
-  font-weight: 700;  
+  font-weight: 700;
   color: var(--accent-color);
 }
 
@@ -179,7 +179,7 @@
 }
 
 .section__paragraph {
-  padding-block-start: 10px;  
+  padding-block-start: 10px;
 }
 
 .section__link {
